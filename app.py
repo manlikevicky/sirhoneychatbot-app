@@ -1,7 +1,6 @@
 import streamlit as st
 import requests
 import base64
-from dotenv import load_dotenv
 import os
 import time
 from datetime import datetime
@@ -207,3 +206,4 @@ if user_input:
 
     st.session_state.messages.append(("assistant", reply, now))
     st.rerun()
+
