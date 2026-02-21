@@ -11,7 +11,7 @@ from datetime import datetime
 # =========================
 #load_dotenv()
 
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+OPENROUTER_API_KEY = st.secrets["OPENROUTER_API_KEY"]
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
@@ -206,6 +206,7 @@ if user_input:
 
     st.session_state.messages.append(("assistant", reply, now))
     st.rerun()
+
 
 
 
