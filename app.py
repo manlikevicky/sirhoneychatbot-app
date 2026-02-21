@@ -4,12 +4,12 @@ import base64
 import os
 import time
 from datetime import datetime
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 # =========================
 # Load environment
 # =========================
-load_dotenv()
+#load_dotenv()
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
@@ -206,5 +206,6 @@ if user_input:
 
     st.session_state.messages.append(("assistant", reply, now))
     st.rerun()
+
 
 
