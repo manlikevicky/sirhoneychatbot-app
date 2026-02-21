@@ -4,7 +4,7 @@ import base64
 import os
 import time
 from datetime import datetime
-
+from dotenv import load_dotenv
 
 # =========================
 # Load environment
@@ -206,4 +206,5 @@ if user_input:
 
     st.session_state.messages.append(("assistant", reply, now))
     st.rerun()
+
 
